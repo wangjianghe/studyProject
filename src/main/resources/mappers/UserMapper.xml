@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="wjh.graduationproject.model.user.dao.UserMapper" >
+    <select id="test" resultType="int">
+        SELECT COUNT(*) FROM user
+    </select>
+    <select id="emailExit" resultType="int">
+        SELECT COUNT('email') FROM user where email=#{email}
+    </select>
+    <select id="usernameExit" resultType="int">
+        SELECT COUNT('user_name') FROM user where user_name=#{userName}
+    </select>
+    <insert id="insertUser">
+        INSERT INTO user(id,user_name,password,email,status,types,session_time)
+        VALUES(#{id},#{userName},#{password},#{email},#{status},#{types},#{sessionTime})
+    </insert>
+    <update id="updateUserActivation">
+        UPDATE user SET status=1 WHERE id=#{uuid}
+    </update>
+    <select id="getLoginUser" resultMap="loginUser">
+        SELECT id,user_name,types,status,email,session_time from user WHERE
+        password=#{password} AND email=#{email}
+    </select>
+    <resultMap id="loginUser" type="wjh.graduationproject.entity.UserEntity">
+        <id column="id" property="id"></id>
+        <result column="user_name" property="userName"></result>
+        <result column="types" property="types"></result>
+        <result column="status" property="status"></result>
+        <result column="email" property="email"></result>
+        <result column="session_time" property="sessionTime"></result>
+    </resultMap>
+    <update id="updatePassword">
+        UPDATE user SET password=#{password} WHERE email=#{email}
+    </update>
+    <select id="getAllUsers" resultMap="loginUser">
+        SELECT * FROM user where user.types!=0
+    </select>
+    <update id="updateUserStatus">
+        update user SET user.status=#{status} WHERE user.id=#{uuid}
+    </update>
+</mapper>

@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.4283;
+    color: #333;
+    background: #f7f8fa;
+}
+.lg{
+    width: 270px;
+    height: 60px;
+    margin: 0;
+}
+.lg img{
+    width: 100%;
+    height: 100%;
+}
+.login{
+    float: right;
+    max-width: 262px;
+}
+#navs{
+    max-width: 1280px;
+}
+.middle{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.content-wrap{
+    background: #ebebeb;
+}
+.content-wrap .post{
+    background: #fff;
+
+}
+.widget{
+    background: #fff;
+
+}
+.widget .title{
+   padding-top: 15px;
+}
+.recommend{
+    text-align: left;
+
+}
+.widget,.post{
+    margin-top: 25px;
+}
+.post-title{
+    padding-top: 15px;
+}
+.reply{
+    margin-top: 30px;
+}
+.reply .replay-submit{
+    margin-top: 15px;
+    float: right;
+}
+.title-bar::before{
+    top: 5px;
+    width: 5px;
+    height: 20px;
+    background: #3498db;
+}
+.comment{
+    text-align: left;
+}
+.comment-new{
+    padding: 10px 0;
+    border-top: 1px solid #2aabd2;
+}
+.replay-text{
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    border:1px solid #ccc;
+    resize: none;
+}
+.comment-list{
+    text-align: left;
+}
+.comment-list h4{
+    padding: 20px 0;
+}
+.media-heading .storey{
+    float: right;
+    padding-right: 30px;
+    font-size: 19px;
+}
+.media .media-left{
+ width: 60px;
+    height: 60px;
+}
+.media .media-left img{
+    width: 50px;
+    height: 50px;
+}
+.media-body .el{
+   margin: 10px 0;
+    content: '';
+    height: 16px;
+    display: block;
+}
+.media-body .details{
+    padding: 10px;
+}
+.el{
+    display: block;
+    width: 100%;
+    height: 17px;
+    line-height: 17px;
+    font-size: 17px;
+    text-align: right;
+}
+.widget .download{
+    text-align: left;
+}
+.widget .download li a{
+    display: inline;
+    text-align: left;
+    float: right;
+}
+.widget .download li .don{
+    text-align: right;
+    display: inline;
+}
+.card{
+    text-align: left;
+    background:#fff;
+    border: 1px solid #e7eaf1;
+    border-radius: 2px;
+    box-shadow: 0 1px rgba(0,37,55,.05);
+    box-sizing: border-box;
+}
+.card .card-up{
+    height: 132px;
+    background: #96a1a9;
+
+}
+.card .card-bottom{
+    position: relative;
+    margin: 0 20px 24px;
+}
+.card .card-bottom .photo{
+    top: -74px;
+    position: absolute;
+    left: 0;
+    z-index: 4;
+    width: 160px;
+    height: 160px;
+    vertical-align: top;
+    border: 4px solid #fff;
+    border-radius: 8px;
+}
+.card .card-bottom .content{
+    padding-top: 16px;
+    padding-left: 32px;
+    border-left: 164px solid transparent;
+}
+.card .card-bottom .content .content-head{
+    padding-right: 106px;
+    margin-bottom: 16px;
+}
+.card .card-bottom .content .content-tips{
+    font-size: 15px;
+    color: #8590a6;
+}
+.card .card-bottom .content .content-footer{
+    position: relative;
+    padding-top: 8px;
+}
+.card .card-bottom .content .content-footer .buttongroup{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.profile-main{
+    text-align: left;
+    width: 1000px;
+    padding: 0 16px;
+    margin:10px auto;
+    position: relative;
+    content: " ";
+}
+.profile-main .profile-mainColumn{
+    width: 694px;
+    margin-right: 20px;
+}
+.profile-main .profile-mainColumn li{
+    padding: 0 20px;
+}
+.profile-main .profile-mainColumn .avtive{
+    border-bottom: 3px solid #0f88eb;
+}
+.profile-main .profile-sideColumn{
+    width: 266px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.list-item{
+    margin-bottom: 40px;
+}
+.list-item a{
+    color: black;
+}
+.list-item a:hover{
+    color: #0f88eb;
+}
+.item-status{
+    color: #8590a6;
+    font-size: 14px;
+
+}
+.item-status span{
+    padding-right: 20px;
+}
+.login .user-image{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border: 3px solid #ffffff;
+}
+.login .user-image img{
+    width: 100%;
+    height: 100%;
+}
